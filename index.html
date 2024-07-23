@@ -62,10 +62,11 @@
               <h3 x-text="item.name"></h3>
               <div class="item-price">
                 <span x-text="rupiah(item.price)"></span> &times;
-              <button id="remove" @click="$store.cart.remove(item.id)">&minus;</button>
-              <span x-text="item.quantity"></span>
-              <button id="add" @click="$store.cart.add(item)">&plus;</button> &equals;
-              <span x-text="rupiah(item.total)"></span>
+                <button id="remove" @click="$store.cart.remove(item.id)">&minus;</button>
+               <span x-text="item.quantity"></span>
+               <button id="add" @click="$store.cart.add(item)">&plus;</button> &equals;
+               <span x-text="rupiah(item.total)"></span>
+              </div>
             </div>
           </div>
         </template>
@@ -104,10 +105,7 @@
         <main class="content">
           <h1>mari nikmati secangkir <span>Kopi</span></h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, est.
-            Necessitatibus soluta blanditiis, nulla mollitia a amet sit corrupti
-            quia iste, porro ab ipsum dolorum natus iusto incidunt dolores
-            quasi.
+           Setiap tegukan kopi memiliki Kisah.
           </p>
         </main>
       </div>
@@ -126,16 +124,14 @@
         <div class="content">
           <h3>Kenapa memilih Kopi Kami?</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint earum
-            quod quasi assumenda, facere harum sed aut quisquam voluptate ipsa?
-            Ipsam ipsum molestiae quis suscipit maxime consequuntur adipisci ut
-            tempore!
+            Kami menawarkan biji kopi pilihan dengan kualitas terbaik dan rasa unik. Dengan komitmen 
+            terhadap keberlanjutan, pelayanan ramah, serta inovasi yang terus berkembang, kami menjadikan 
+            setiap cangkir kopi pengalaman istimewa bagi Anda.
           </p>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            repudiandae nobis laboriosam non ea excepturi dolore, molestiae,
-            explicabo illum molestias possimus, debitis accusantium eaque eos
-            aut ratione fugit deleniti! Voluptatem.
+            Dari setiap tegukan, Anda akan merasakan dedikasi kami dalam menyajikan kopi yang tidak hanya 
+            memuaskan, tetapi juga membangkitkan semangat. Nikmati kehangatan dan kenyamanan di setiap 
+            kunjungan ke kedai kami.
           </p>
         </div>
       </div>
@@ -146,10 +142,9 @@
     <section id="menu" class="menu">
       <h2><span>Menu</span> Kami</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique odit
-        ut temporibus laudantium illum minus deserunt vel eum fuga corporis
-        consequatur voluptatum eveniet voluptatem praesentium voluptates autem
-        accusantium, magni necessitatibus.
+        di kedai kopi SangPaman, kami bangga menyajikan berbagai pilihan kopi yang menggugah selera. 
+        Setiap cangkir dibuat dengan biji kopi pilihan dan diproses dengan penuh ketelitian untuk
+         menghasilkan rasa yang sempurna. Berikut adalah beberapa pilihan kopi yang kami tawarkan.
       </p>
 
       <div class="row">
@@ -159,28 +154,18 @@
           <p class="menu-card-price">IDR 15K</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
+          <img src="img/menu/2.jpg" alt="espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Latte -</h3>
           <p class="menu-card-price">IDR 15K</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
+          <img src="img/menu/3.jpg" alt="espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- americano -</h3>
           <p class="menu-card-price">IDR 15K</p>
         </div>
         <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="img/menu/1.jpg" alt="espresso" class="menu-card-image" />
-          <h3 class="menu-card-title">- Espresso -</h3>
+          <img src="img/menu/4.jpg" alt="espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Cappucino -</h3>
           <p class="menu-card-price">IDR 15K</p>
         </div>
       </div>
@@ -191,10 +176,9 @@
     <section class="products" id="products" x-data="products">
       <h2><span>Produk unggulan</span> kami</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-        praesentium necessitatibus eos veniam ipsam recusandae assumenda vitae
-        dolorum, temporibus quos. Voluptatem ipsam sapiente aperiam quidem
-        commodi, vero aliquam numquam dolorum.
+        dibuat dengan biji kopi pilihan yang disangrai secara khusus untuk menghasilkan aroma dan rasa 
+        yang sempurna. Disajikan dengan sentuhan khas sangPaman, produk ini menjadi favorit pelanggan kami dan 
+        alasan mereka kembali lagi. Nikmati kelezatan yang tiada duanya di setiap tegukannya.
       </p>
 
       <div class="row">
@@ -255,13 +239,26 @@
     <!--Contact section start-->
     <section id="contact" class="contact">
       <h2><span>Kontak</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, facere
-        quis reiciendis enim, explicabo similique eveniet harum consequuntur
-        quae quaerat in dolore doloribus. Corporis sit quas vitae soluta tempore
-        magni.
-      </p>
+      <pre>
+        Kami senang mendengar dari Anda! Jika Anda memiliki pertanyaan,
+        atau ingin memesan untuk acara 
+        khusus, jangan ragu untuk menghubungi kami melalui:
+      
+        Telepon: 021-1234567
+        WhatsApp: 0812-3456-7890
+        Email: info@kedaikopi.com
+     
+        Jam Operasional:
+        Senin - Jumat: 07.00 - 22.00
+        Sabtu - Minggu: 08.00 - 23.00
 
+        Alamat:
+       Jl. Kopi Nikmat No. 42, Jakarta Selatan
+
+       Anda juga dapat mengunjungi kami langsung di kedai. 
+       Kami selalu siap menyambut Anda dengan secangkir kopi hangat 
+       dan senyuman ramah.
+      </pre>
       <div class="row">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150605.0060531637!2d112.63015174066217!3d-7.286234635786964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1721061361069!5m2!1sid!2sid"

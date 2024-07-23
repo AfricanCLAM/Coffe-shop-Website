@@ -391,8 +391,7 @@ font-size: 1.1rem;
 }
 
 .menu p,
-.products p,
-.contact p {
+.products p {
   text-align: center;
   max-width: 30rem;
   margin: auto;
@@ -492,6 +491,13 @@ font-size: 1.1rem;
 } */
 
 /*contact section*/
+.contact pre {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
 .contact .row {
   display: flex;
   margin-top: 2rem;

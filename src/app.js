@@ -2,10 +2,9 @@ document.addEventListener('alpine:init', () => {
     Alpine.data('products', () => ({
         items: [
             { id: 1, name: 'Robusta Brazil', img: '1.jpg', price: 20000 },
-            { id: 2, name: 'Arabica blend', img: '1.jpg', price: 25000 },
-            { id: 3, name: 'Liberica', img: '1.jpg', price: 30000 },
-            { id: 4, name: 'Excelsa', img: '1.jpg', price: 35000 },
-            { id: 5, name: 'Aceh gayo', img: '1.jpg', price: 40000 },
+            { id: 2, name: 'Arabica blend', img: '2.jpg', price: 25000 },
+            { id: 3, name: 'Liberica', img: '3.jpg', price: 30000 },
+            { id: 4, name: 'Excelsa', img: '4.jpg', price: 35000 }
         ]
     }));
 
@@ -53,7 +52,7 @@ document.addEventListener('alpine:init', () => {
                     } else {
                         item.quantity--;
                         item.total = item.price * item.quantity;
-                        item.quantity--;
+                        this.quantity--;
                         this.total -= item.price;
                         return item;
                     }
